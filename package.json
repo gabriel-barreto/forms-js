@@ -1,9 +1,9 @@
 {
-  "name": "vue-forms",
+  "name": "forms-js",
   "version": "1.0.0",
   "description": "Use a JSON with instruction to generate your form component",
   "main": "index.js",
-  "repository": "https://github.com/gabriel-barreto/vue-form",
+  "repository": "https://github.com/gabriel-barreto/forms-js",
   "author": "Gabriel Barreto <barreto-gabriel@outlook.com>",
   "license": "MIT",
   "scripts": {
