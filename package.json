@@ -7,15 +7,25 @@
   "author": "Gabriel Barreto <barreto-gabriel@outlook.com>",
   "license": "MIT",
   "nyc": {
-    "reporter": ["text", "html"],
-    "exclude": ["tests/**"]
+    "funtions": 80,
+    "lines": 75,
+    "check-coverage": true,
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "exclude": [
+      "tests/**"
+    ]
   },
   "scripts": {
+    "prepush": "npm run lint && npm test:coverage",
     "dev": "./node_modules/.bin/webpack --hot --progress --colors",
-    "watch": "npm run dev -- --watch",
+    "lint": "./node_modules/.bin/eslint src/*.js",
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --bail",
     "test:tdd": "npm test -- --watch",
-    "test:coverage": "nyc npm test"
+    "test:coverage": "nyc npm test",
+    "watch": "npm run dev -- --watch"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -27,6 +37,7 @@
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.12.0",
+    "husky": "^0.14.3",
     "mocha": "^5.2.0",
     "nyc": "^11.8.0",
     "sinon": "^5.0.10",
