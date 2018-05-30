@@ -24,7 +24,7 @@
   ],
   "scripts": {
     "clear": "rimraf lib",
-    "coveralls": "npm run test:coverage && nyc report --reporter=text-lcov | coveralls",
+    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
     "prepush": "npm run lint && npm run test:coverage",
     "build": "npm run clear && ./node_modules/.bin/babel --out-dir lib src --source-maps",
     "build:umd": "NODE_ENV=development ./node_modules/.bin/webpack --hot --progress --colors --output-filename=forms.umd.js",
