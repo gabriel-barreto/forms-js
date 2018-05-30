@@ -1,5 +1,6 @@
 # Custom
 dist/
+lib/
 .vscode/
 *.lock
 package-lock.json
