@@ -1,0 +1,17 @@
+{
+  "name": "vue-forms",
+  "version": "1.0.0",
+  "description": "Use a JSON with instruction to generate your form component",
+  "main": "index.js",
+  "repository": "https://github.com/gabriel-barreto/vue-form",
+  "author": "Gabriel Barreto <barreto-gabriel@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "webpack": "^4.10.1",
+    "webpack-cli": "^2.1.4"
+  }
+}
