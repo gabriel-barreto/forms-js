@@ -6,11 +6,16 @@
   "repository": "https://github.com/gabriel-barreto/forms-js",
   "author": "Gabriel Barreto <barreto-gabriel@outlook.com>",
   "license": "MIT",
+  "nyc": {
+    "reporter": ["text", "html"],
+    "exclude": ["tests/**"]
+  },
   "scripts": {
     "dev": "./node_modules/.bin/webpack --hot --progress --colors",
     "watch": "npm run dev -- --watch",
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --bail",
-    "test:tdd": "npm test -- --watch"
+    "test:tdd": "npm test -- --watch",
+    "test:coverage": "nyc npm test"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
