@@ -2,6 +2,7 @@
 dist/
 .vscode/
 *.lock
+package-lock.json
 
 # Logs
 logs
